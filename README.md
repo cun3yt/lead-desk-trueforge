@@ -20,10 +20,10 @@ Sandbox and subagents are off. This job does not need them.
 
 ## Run it
 
-Requirements: Node 22.14+, an Anthropic API key, an Ambiguous workspace with an agent API key (`ak_…`).
+Requirements: Node 22.14+, an Anthropic or OpenAI API key, an Ambiguous workspace with an agent API key (`ak_…`).
 
 ```bash
-cp .env.example .env           # fill ANTHROPIC_API_KEY, AMBI_API_TOKEN, AMBI_API_URL
+cp .env.example .env           # fill AMBI_API_TOKEN, AMBI_API_URL, and ANTHROPIC_API_KEY or OPENAI_API_KEY
 npx @truefoundry/trueforge@latest   # http://localhost:8790, leave it running
 ./trueforge/setup.sh           # registers model provider, Ambiguous connector, lead-desk agent
 ```

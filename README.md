@@ -62,7 +62,11 @@ trueforge/
   inbound-3-injection.txt    email with injected instructions, for the Deny beat
   DEMO.md                    3-minute demo script
   STEPS.md                   build log
+  seed/                      markdown for the wiki pages the agent reads: playbook, pricing, product, faq, integrations, on-prem
+  reference/ambiguous-api.md notes on the Ambiguous REST / MCP API
 ```
+
+The wiki page the prompt searches for is titled "Concierge playbook" in the demo workspace. If you seed a fresh workspace from `seed/playbook.md`, give the page that title or change the search string in `instructions.md`.
 
 ## Demo video
 

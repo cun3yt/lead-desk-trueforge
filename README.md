@@ -55,8 +55,6 @@ trueforge/
   STEPS.md                   build log
 ```
 
-`app/`, `components/`, `lib/`, `scripts/`, `docs/` are an earlier standalone version of the same idea with hand-written tools. Kept for reference; not part of this submission.
-
 ## Demo video
 
 _link added at submission_

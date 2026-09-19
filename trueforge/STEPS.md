@@ -48,12 +48,13 @@ Status as of 2026-09-19 14:20 PT. Each tracer bullet ends in a demoable state.
 ## Remaining
 
 ### TB6. Ship (target 25 min)
-20. `trueforge/reset.sh` — delete a company's deal, contacts, event, #sales message so the demo reruns clean. Blocked by my permission classifier when I tried to run it; you run it by hand: `trueforge/reset.sh Northwind`, then `Bluebird`, then `Skyline`.
-21. Root `README.md` — what it is, why TrueForge, `npx` + `setup.sh` quickstart, the five harness features used, demo video link. Note that `app/`, `components/`, `lib/` are the Sep 12 CopilotKit version and are not part of the submission.
-22. `trueforge/DEMO.md` — 3-minute script (below).
-23. UI check in the browser: run `inbound-2` through the chat UI once, refresh mid-run, confirm the pending approval survives.
-24. Record video, one take, from the demo script.
-25. `git add -A && git commit`, create GitHub remote, push, add video link to README, submit.
+20. DONE `trueforge/reset.sh` written, not run (permission classifier blocks deletes). Run by hand before the demo: `trueforge/reset.sh Northwind; trueforge/reset.sh Bluebird; trueforge/reset.sh Skyline`.
+21. DONE Root `README.md`.
+22. DONE `trueforge/DEMO.md`.
+23. DONE Initial commit `64bbefd` on `main`. `.env` confirmed ignored, staged diff scanned for keys. Note: `npx trueforge` overwrote `.gitignore` and dropped a `src/index.ts` stub into the cwd; both fixed.
+24. TODO Create the public remote and push (classifier blocks creating public repos): `gh repo create lead-desk-trueforge --public --source=. --remote=origin --push`.
+25. TODO UI rehearsal: run `inbound-2` in the chat UI, refresh mid-run, confirm the pending approval survives.
+26. TODO Record video, add link to README, commit, push, submit.
 
 ### Demo script (3 min)
 1. 0:00 Pitch hook: 856 tools, six picked, TrueForge handled the rest. (15 s)

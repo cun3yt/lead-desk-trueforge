@@ -2,26 +2,13 @@
 .env*
 !.env.example
 .ambi/
-*.pem
-
-# node / next
-node_modules/
-.next/
-out/
-/build/
-/coverage/
-next-env.d.ts
-*.tsbuildinfo
-.vercel
-npm-debug.log*
 
 # trueforge local scratch
 /tmp
 /out-tsc
+/src
+node_modules/
 
 # os / editor
 .DS_Store
-.idea/
-
-# IDE
 .idea/

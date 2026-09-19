@@ -49,7 +49,8 @@ trueforge/
   setup.sh                   one-shot setup against a fresh local TrueForge
   run.py                     headless driver over POST /sessions and /turns, handles tool.approval_required
   reset.sh                   deletes one company's deal, event, message and contacts
-  inbound-1.txt, inbound-2.txt   happy-path emails
+  wipe.sh                    deletes every deal, contact, event, task and #sales message
+  inbound-1.txt, inbound-2.txt, inbound-4.txt   happy-path emails
   inbound-3-injection.txt    email with injected instructions, for the Deny beat
   DEMO.md                    3-minute demo script
   STEPS.md                   build log

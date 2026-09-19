@@ -50,7 +50,7 @@ Status as of 2026-09-19 14:20 PT. Each tracer bullet ends in a demoable state.
 ### TB6. Ship (target 25 min)
 20. DONE `trueforge/reset.sh` written, not run (permission classifier blocks deletes). Run by hand before the demo: `trueforge/reset.sh Northwind; trueforge/reset.sh Bluebird; trueforge/reset.sh Skyline`.
 21. DONE Root `README.md`.
-22. DONE `trueforge/DEMO.md`.
+22. Demo script kept outside the repo.
 23. DONE Initial commit `64bbefd` on `main`. `.env` confirmed ignored, staged diff scanned for keys. Note: `npx trueforge` overwrote `.gitignore` and dropped a `src/index.ts` stub into the cwd; both fixed.
 24. TODO Create the public remote and push (classifier blocks creating public repos): `gh repo create lead-desk-trueforge --public --source=. --remote=origin --push`.
 25. TODO UI rehearsal: run `inbound-2` in the chat UI, refresh mid-run, confirm the pending approval survives.

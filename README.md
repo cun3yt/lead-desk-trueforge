@@ -60,7 +60,6 @@ trueforge/
   wipe.sh                    deletes every deal, contact, event, task and #sales message in Ambiguous
   inbound-1.txt, inbound-2.txt, inbound-4.txt   happy-path emails
   inbound-3-injection.txt    email with injected instructions, for the Deny beat
-  DEMO.md                    3-minute demo script
   STEPS.md                   build log
   seed/                      markdown for the wiki pages the agent reads: playbook, pricing, product, faq, integrations, on-prem
   reference/ambiguous-api.md notes on the Ambiguous REST / MCP API

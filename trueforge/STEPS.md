@@ -5,7 +5,7 @@ Status as of 2026-09-19 14:20 PT. Each tracer bullet ends in a demoable state.
 ## Done
 
 ### TB0. Prep
-1. Started from an earlier standalone prototype, copied in without git history. `git init`, branch `main`, nothing committed yet.
+1. New repo: `git init`, branch `main`. Ambiguous workspace already seeded with wiki pages, a Sales pipeline and a #sales channel.
 2. `.env` filled by hand: `ANTHROPIC_API_KEY`, `AMBI_API_TOKEN` (ak_ key for the workspace agent identity), `AMBI_API_URL`.
 3. Verified Ambiguous workspace seed still exists: pipeline "Sales" (stage "New lead" `b1776436…`), channel `#sales` (`1e40584f…`), wiki page "Concierge playbook", wiki page "Pricing".
 4. Probed `https://app.ambiguous.ai/mcp` with `Authorization: Bearer ak_…`: returns 200, `tools/list` gives 895 tools. Header auth works, no OAuth needed.

@@ -2,7 +2,7 @@
 
 Screen layout: left half TrueForge chat (http://localhost:8790, agent `lead-desk`). Right half Ambiguous, tabs open on the CRM "Sales" board and the `#sales` channel.
 
-Before recording: `trueforge/reset.sh Bluebird && trueforge/reset.sh Skyline`.
+Before recording: `trueforge/wipe.sh`, then close old chats so the Sessions list is empty.
 
 | Time | Beat | Say |
 |---|---|---|

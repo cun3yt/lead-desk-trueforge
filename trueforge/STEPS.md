@@ -5,8 +5,8 @@ Status as of 2026-09-19 14:20 PT. Each tracer bullet ends in a demoable state.
 ## Done
 
 ### TB0. Prep
-1. Copied the Concierge repo (Sep 12 hackathon) into this folder without git history. `git init`, branch `main`, nothing committed yet.
-2. `.env` filled by hand: `ANTHROPIC_API_KEY`, `AMBI_API_TOKEN` (ak_ key for the "Concierge" agent identity), `AMBI_API_URL`.
+1. Started from an earlier standalone prototype, copied in without git history. `git init`, branch `main`, nothing committed yet.
+2. `.env` filled by hand: `ANTHROPIC_API_KEY`, `AMBI_API_TOKEN` (ak_ key for the workspace agent identity), `AMBI_API_URL`.
 3. Verified Ambiguous workspace seed still exists: pipeline "Sales" (stage "New lead" `b1776436…`), channel `#sales` (`1e40584f…`), wiki page "Concierge playbook", wiki page "Pricing".
 4. Probed `https://app.ambiguous.ai/mcp` with `Authorization: Bearer ak_…`: returns 200, `tools/list` gives 895 tools. Header auth works, no OAuth needed.
 5. Started TrueForge: `npx @truefoundry/trueforge@latest` → http://localhost:8790, API at `/api/v1`, OpenAPI at `/api/v1/openapi.json`.
@@ -67,6 +67,6 @@ Status as of 2026-09-19 14:20 PT. Each tracer bullet ends in a demoable state.
 8. 2:30 Close: "A chat window answers the email. Lead Desk closes it, with a human on the last button." (15 s)
 
 ### Known gaps
-- Event lands on the Concierge agent's own calendar, not the sales rep's. Acceptable for demo; fix = pass the rep's calendar id in the prompt.
+- Event lands on the workspace agent's own calendar, not the sales rep's. Acceptable for demo; fix = pass the rep's calendar id in the prompt.
 - Full run is ~50 s. If the demo needs to be faster, cut the `list_contacts` step from the prompt.
 - Subagents and sandbox unused. Score is MCP + approvals + durable sessions + deferred tool loading.

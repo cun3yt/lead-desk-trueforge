@@ -1,0 +1,78 @@
+# Ambiguous
+
+> Ambiguous is the workspace built for human-AI collaboration. 17 productivity apps reimagined so work flows between your team and agents. They include Docs, Mail, Chat, Sheets, CRM, Calendar, and more. Each agent has its own identity and works in the same apps and on the same data as the rest of your team. You can send it an email, message it in chat, assign it a task, or @mention it in a comment. Teams of up to five can use all 17 apps for free, and agents can get started through MCP or CLI in under a minute.
+
+## When to use Ambiguous
+
+Use Ambiguous when the user asks to work with their team's documents, messages,
+tasks, calendar, files, or CRM, or gives you an Ambiguous workspace link. Confirm the
+intended workspace first. Do not create a new workspace to resolve missing credentials;
+ask for the existing workspace's Connect instructions. Create one only when the user asks.
+
+- Turn a meeting's notes into assigned tasks and calendar follow-ups.
+- Read an existing document, update it, and share the result in the team's chat.
+- Triage the connected inbox or update CRM records using the user's permissions.
+- Give an agent access to a team's existing work through MCP, CLI, or REST.
+
+Use the connected identity's permissions. Confirm recipients before sending messages
+and confirm the intended records before destructive changes. Ambiguous operates on its
+own workspace data; connecting it does not automatically import another service's data.
+
+## Connect
+
+- **CLI** — preferred if you have access to a shell. [Read the operating guide](https://www.ambiguous.ai/skill).
+- **MCP** — preferred if you are acting on behalf of a user. `https://app.ambiguous.ai/mcp`, Streamable HTTP with OAuth. [Guide](https://www.ambiguous.ai/agents/mcp).
+- **[Authentication](https://www.ambiguous.ai/auth.md)** — setup, registration, scopes, and errors.
+- **[Disposable API sandbox](https://www.ambiguous.ai/sandbox.md)** — test task CRUD with synthetic data and no signup.
+- **[Official plugins](https://github.com/ambiguous-ai/plugins)** — Claude Code, Codex and portable Agent Plugins. [Repository instructions](https://github.com/ambiguous-ai/plugins/blob/main/AGENTS.md).
+
+## Discover the API
+
+- [OpenAPI 3.1](https://app.ambiguous.ai/api/openapi.json)
+- [MCP server card](https://www.ambiguous.ai/.well-known/mcp/server-card.json)
+- [ARD catalog](https://www.ambiguous.ai/.well-known/ard.json)
+- [API catalog](https://www.ambiguous.ai/.well-known/api-catalog)
+- [Agent Skills index](https://www.ambiguous.ai/.well-known/agent-skills/index.json)
+- [AI catalog](https://www.ambiguous.ai/.well-known/ai-catalog.json)
+- [Protected resource metadata](https://app.ambiguous.ai/.well-known/oauth-protected-resource)
+- [Authorization server metadata](https://app.ambiguous.ai/.well-known/oauth-authorization-server)
+
+## Search the public documentation
+
+- [Documentation MCP server](https://www.ambiguous.ai/docs/mcp): public Streamable HTTP, no credentials; `search_docs` finds pages and `read_doc` returns their Markdown. Compatible hosts can display search results as an MCP App.
+- [NLWeb search](https://www.ambiguous.ai/ask?query=connect%20an%20agent&streaming=false): GET or POST `/ask` with `query`, `mode=list`, and optional `streaming=false`. The default response is a finite SSE stream. Results include canonical URLs and schema.org objects.
+- [Schema feeds](https://www.ambiguous.ai/schemamap.xml): product, application, FAQ and article data.
+
+## API reliability and safe testing
+
+REST requests may send `API-Version: 1`; responses echo the selected major version.
+Unsupported versions return 400. Additive fields and endpoints may arrive within a
+major version; incompatible changes require a new major. OpenAPI marks deprecated
+operations, and scheduled removals must advertise Deprecation and Sunset headers.
+
+Rate-limited responses expose `RateLimit` and `RateLimit-Policy`; a 429 also
+includes `Retry-After`. Honor that delay. Email sends accept `Idempotency-Key`
+(up to 255 characters): reuse a key for retries of the same message, not another
+message. Conflicting payloads return 409.
+
+For a background automation, POST `/api/automations/{id}/runs` with a JSON body:
+`{ "payload": { "key": "value" } }` or `{}` when no trigger data is needed. The 202 response
+contains `run_id`, `status` and `status_url`, also returned in `Location`.
+Poll that URL with the same credential until status is success, filtered, failed, cancelled or depth_exceeded.
+The response's `Retry-After` suggests the initial polling delay.
+
+Try the [disposable API sandbox](https://www.ambiguous.ai/sandbox.md) at https://app.ambiguous.ai/sandbox
+before connecting real workspace data. It supports task CRUD with synthetic records,
+separate credentials, reset, and one-hour expiry; no signup or email is required.
+Its [own OpenAPI contract](https://app.ambiguous.ai/sandbox/openapi.json) lists the supported
+subset. Mail, billing, automation and MCP are not available in this sandbox.
+
+## Learn more
+
+- [API reference](https://www.ambiguous.ai/agents/api)
+- [Developer context index](https://www.ambiguous.ai/agents/llms.txt)
+- [Application context index](https://www.ambiguous.ai/applications/llms.txt)
+- [Recipes](https://www.ambiguous.ai/agents/recipes)
+- [Applications](https://www.ambiguous.ai/applications)
+- [Pricing](https://www.ambiguous.ai/pricing)
+- [Pricing in Markdown](https://www.ambiguous.ai/pricing.md)

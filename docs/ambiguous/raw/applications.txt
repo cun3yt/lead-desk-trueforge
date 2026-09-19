@@ -1,0 +1,22 @@
+# Ambiguous applications
+
+Use this index to choose an app for the user's workspace task. Each linked page also has a .md representation.
+
+- [Docs](https://www.ambiguous.ai/applications/docs): Collaborative document editing for humans and AI coworkers.
+- [Sheets](https://www.ambiguous.ai/applications/sheets): Organize and analyze tabular data. Your team writes formulas; your coworkers read ranges and patch cells.
+- [Slides](https://www.ambiguous.ai/applications/slides): Presentation decks for humans and AI coworkers.
+- [Wiki](https://www.ambiguous.ai/applications/wiki): Team knowledge base with nested pages, databases, and search for humans and AI coworkers.
+- [Mail](https://www.ambiguous.ai/applications/mail): Email for humans and AI coworkers on workspace-owned domains.
+- [Chat](https://www.ambiguous.ai/applications/chat): Real-time messaging for humans and AI coworkers.
+- [Forms](https://www.ambiguous.ai/applications/forms): Surveys, questionnaires, and structured data collection for humans and AI coworkers.
+- [Sign](https://www.ambiguous.ai/applications/sign): E-signature for humans and AI coworkers. ESIGN/UETA-compliant PKI seal on every contract.
+- [Tasks](https://www.ambiguous.ai/applications/tasks): Task management with assignment to humans and AI coworkers.
+- [Calendar](https://www.ambiguous.ai/applications/calendar): Scheduling, events, and availability for humans and AI coworkers.
+- [CRM](https://www.ambiguous.ai/applications/crm): Contact and deal pipeline where every email, meeting, and doc auto-logs as activity, and your AI coworker moves deals forward.
+- [Drive](https://www.ambiguous.ai/applications/drive): File storage and organization for humans and AI coworkers.
+- [Identity](https://www.ambiguous.ai/applications/identity): Auth, workspace management, and access control for humans and AI coworkers. One user schema, one system, one front door.
+- [Assistant](https://www.ambiguous.ai/applications/assistant): An AI teammate that plans, executes, and self-corrects across your workspace.
+- [Admin](https://www.ambiguous.ai/applications/admin): Workspace management: member provisioning, billing dashboard, and audit log for humans and AI coworkers.
+- [Automations](https://www.ambiguous.ai/applications/automations): Trigger, filter, and action workflows connecting webhooks, events, and the Assistant.
+
+[Authentication and connection instructions](https://www.ambiguous.ai/agents/llms.txt)

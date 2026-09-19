@@ -1,0 +1,38 @@
+# CopilotKit
+
+> CopilotKit is the frontend stack where agents meet users. It extends from open-source components and runtime into a production platform for durable conversations and agent-user experiences.
+
+CopilotKit helps teams embed agent chat, generative UI, and human-in-the-loop workflows in their products while preserving the interaction history needed to operate and improve those experiences. Start with the product overview: [CopilotKit](https://www.copilotkit.ai/).
+
+## Durable conversations first
+
+- [Rich Threads](https://www.copilotkit.ai/rich-threads) persist agent-user interactions across sessions, including generative UI, tool activity, shared state, files, and human-in-the-loop actions.
+- [Generative UI](https://www.copilotkit.ai/generative-ui) covers controlled, declarative, and open UI patterns for agents.
+- [Intelligence](https://www.copilotkit.ai/copilotkit-intelligence) is the production platform for persistent Rich Threads, synchronization, analytics, and improvement loops.
+- [Automatic Learning](https://www.copilotkit.ai/learning/what-is-agent-learning) is CopilotKit's path for improving agent behavior from user interactions and feedback.
+- [Product Analytics](https://www.copilotkit.ai/copilotkit-intelligence#analytics-insights) uses agent-user interaction data to show what users try, where they succeed or struggle, and what to improve next. It complements LLM observability with a product view of user behavior and outcomes.
+
+## Connect any agent stack
+
+- [AG-UI](https://www.copilotkit.ai/ag-ui) is the open, framework-agnostic protocol for agent-user interaction. MCP connects models and agents to tools and context; A2A supports agent-to-agent coordination. See [AG-UI, MCP, and A2A](https://www.copilotkit.ai/learning/mcp-vs-a2a-vs-ag-ui) for how the layers fit together.
+- See [pricing](https://www.copilotkit.ai/pricing) for hosted platform options, or begin with the [documentation](https://docs.copilotkit.ai/).
+
+## Build the interaction
+
+- [Embedded chat components](https://docs.copilotkit.ai/prebuilt-components/chat)
+- [Human-in-the-loop workflows](https://docs.copilotkit.ai/human-in-the-loop)
+- [Frontend tools and generative UI](https://docs.copilotkit.ai/frontend-tools)
+
+## Bring agents into workplace conversations
+
+- [Channels](https://www.copilotkit.ai/channels) brings AG-UI agents into Slack, Microsoft Teams, and other messaging platforms with native messages, interactive UI, and human approvals. Your agent runs in your infrastructure; CopilotKit Intelligence provides managed channel connections, credentials, delivery, and conversation history.
+- [Slack documentation](https://docs.copilotkit.ai/slack): managed Slack is available now.
+- [Microsoft Teams documentation](https://docs.copilotkit.ai/teams): managed Teams is a controlled integration target. Direct Channels SDK adapters also support Teams, Discord, WhatsApp, and Telegram; operating your own runner requires your own durable-data layer.
+
+## Bring existing conversations into Rich Threads
+
+Historical import and ongoing synchronization are separate paths. Use a one-time import to bring supported conversation history into Intelligence, then use the framework integration for ongoing synchronization of new CopilotKit-mediated interactions. LangChain histories are supported only when exposed through supported LangGraph APIs.
+
+- [Thread import overview](https://docs.copilotkit.ai/threads-import)
+- [Google ADK thread import and synchronization](https://docs.copilotkit.ai/google-adk/threads-import)
+- [LangGraph thread import and synchronization](https://docs.copilotkit.ai/langgraph-python/threads-import)

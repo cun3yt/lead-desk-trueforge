@@ -1,0 +1,10 @@
+Subject: Fleet inspection rollout
+
+Hi Acme team,
+
+I'm Dana Whitfield, Head of Operations at Northwind Robotics (dana@northwind.example). We run about 40 technicians and fleet managers and want to roll out inspections next month, ideally starting mid-October.
+
+Does the Growth plan include SSO? And can we get a demo this week?
+
+Thanks,
+Dana

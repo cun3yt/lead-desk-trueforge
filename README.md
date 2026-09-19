@@ -14,7 +14,7 @@ No application code. One system prompt, one MCP connection, one workspace. The h
 | Tool allowlist + deferred loading | The agent sees 9 of 895 tools. The other 886 never reach the model. A raw `tools/list` from this server is 775 KB; without the allowlist it would not fit a prompt. |
 | Approval gates | `create_deal`, `create_event`, `send_message`, `create_task` pause with the full arguments on screen. Contacts and reads run without a gate. |
 | Durable sessions | Refresh mid-run; the pending approval is still there. |
-| Prompt-injection containment | The inbound email is untrusted. The agent can only touch six write tools, and every customer-visible one needs a human click. See `trueforge/inbound-3-injection.txt`. |
+| Prompt-injection containment | The inbound email is untrusted. The agent can only touch five write tools, and every customer-visible one needs a human click. See `trueforge/inbound-3-injection.txt`. |
 
 Sandbox and subagents are off. This job does not need them.
 

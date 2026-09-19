@@ -6,7 +6,7 @@ Before recording: `trueforge/reset.sh Bluebird && trueforge/reset.sh Skyline`.
 
 | Time | Beat | Say |
 |---|---|---|
-| 0:00 | Title | "Eight hundred fifty-six tools. That is what the Ambiguous workspace MCP server hands you. Most frameworks choke on it. TrueForge did not: we picked nine, TrueForge handled auth and kept the rest out of context." |
+| 0:00 | Title | "Eight hundred ninety-five tools. That is what the Ambiguous workspace MCP server hands you. Most frameworks choke on it. TrueForge did not: we picked nine, TrueForge handled auth and kept the rest out of context." |
 | 0:15 | Paste `inbound-2.txt` | "An inbound email lands. Marcus, Bluebird Couriers, 31 seats, asks about SSO and a demo." |
 | 0:25 | Wiki calls stream | "First it reads. Two MCP calls against the company wiki. It answers the SSO question with the page as source." |
 | 0:45 | Pause 1: `create_deal` | "Now it wants to write. TrueForge stops and shows the exact call. Title, pipeline, stage, contact. I click Allow." Point at the deal appearing on the board. |
